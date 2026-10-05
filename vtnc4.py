@@ -60,7 +60,7 @@ grafico1 = px.bar(tabela_vendas, x='vendedor', y='valor', color='produto')
 st.plotly_chart(grafico1)
 
 #Grafico - venda por produto
-grafico2 = px.pie(tabela_vendas, names='produtos', values='valor', hole=0.3)
+grafico2 = px.pie(tabela_vendas, names='produto', values='valor', hole=0.3)
 st.plotly_chart(grafico2)
 
 
